@@ -10,6 +10,7 @@
       "128":"images/icon-128.png"
    },
    "action":{
+      "default_popup": "./popup/popup.html",
       "default_icon":{
          "16":"images/icon-16.png",
          "32":"images/icon-32.png",
@@ -27,9 +28,17 @@
    "background":{
       "service_worker":"background.js"
    },
+   "content_scripts": [
+      {
+         "matches": ["https://www.habblet.city/hotelv2"],
+         "js": ["content/managePanels.js"]
+      }
+   ],
    "permissions":[
       "activeTab",
+      "tabs",
       "scripting",
+      "storage",
       "declarativeNetRequest",
       "declarativeNetRequestFeedback"
    ]

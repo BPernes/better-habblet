@@ -7,19 +7,22 @@
 	<title> Radio Controller </title>
 </head>
 <body>
-		<h2> Radio Controller</h1>
+		<main class="content flex">
+			<img src="../images/title-panel.png" alt="Texto decorado com letras 8-bits, escrito: 'habblet controller'">
+			<div class="panel flex">
+				<label class="switch" for="hide-player">
+					ESCONDER A RÁDIO
+					<input type="checkbox" name="hide-player" id="hide-player">
+					<span class="slider"></span>
+				</label>
 
-		<label class="switch" for="hide-player">
-			Esconder a rádio
-			<input type="checkbox" name="hide-player" id="hide-player">
-			<span class="slider"></span>
-		</label>
-
-		<label class="switch" for="stop-radio">
-			Pausar rádio
-			<input type="checkbox" name="stop-radio" id="stop-radio">
-			<span class="slider"></span>
-		</label>
+				<label class="switch" for="stop-radio">
+					PAUSAR RÁDIO
+					<input type="checkbox" name="stop-radio" id="stop-radio">
+					<span class="slider"></span>
+				</label>
+			</div>
+		</main>
 
 		<script type="module" src="popup.js"></script>
 </body>

@@ -5,7 +5,8 @@ Habblet AdBlocker é uma extensão simples que melhora a experiência de jogar h
 ## Funcionalidades
 
 - Remove os banners de anúncio, assim como outros anúncios da google
-- Desabilita a rádio habblet
+- Esconde e muta a rádio do jogo opcionalmente (A sua escolha é lembrada permanentemente)
+
 
 ## Instalando a extensão
 
@@ -32,8 +33,11 @@ Habblet AdBlocker é uma extensão simples que melhora a experiência de jogar h
 
 ## Como utilizar?
 
-- Assim que vc estiver na aba do jogo, ou seja, na url "habblet.city/hotelv2" realize um click no ícone da extensão para remover os anúncios e a rádio.
-
+- Automaticamente a extensão irá bloquear os anúncios
+- Assim que vc estiver na aba do jogo, ou seja, na url "habblet.city/hotelv2" realize um click no ícone da extensão para abrir o painel de opções.
 ![](.github/step-5.png)
 
-- Agora é só aproveitar o jogo sem anúncios!
+- Agora é só escolher entre as duas opções disponíveis (A escolha é permanece mesmo ao recarregar a página)   
+![](.github/step-6.png)
+
+Só aproveitar agr!

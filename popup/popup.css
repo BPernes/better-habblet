@@ -8,6 +8,13 @@
 	--ff-base: 'Press Start 2P', system-ui;
 }
 
+@font-face {
+
+	font-family: 'Press Start 2P';
+	src: url("../fonts/PressStart2P.woff2") format('woff2-variations');
+	font-weight: 100 900;
+}
+
 *,
 *::after,
 *::before {
@@ -25,11 +32,6 @@ select {
 	font: inherit;
 }
 
-@font-face {
-	font-family: 'Press Start 2P';
-	src: url("../fonts/PressStart2P.woff2") format('woff2-variations');
-	font-weight: 100 900;
-}
 
 body {
 	width: 250px;
@@ -39,9 +41,9 @@ body {
 	font-family: var(--ff-base);
 
 	background-color: var(--clr-bg-main);
+	border: 1px solid var(--clr-text);
 }
 
-label,
 input {
 	cursor: pointer;
 }
@@ -58,11 +60,38 @@ label {
 
 .panel {
 	background-color: var(--clr-bg-panel);
+	background-image: url(../images/panel-innerlines.svg);
 	border: solid black 1px;
 	padding: 1em;
 	gap: 0.5em;
 }
 
+.switch {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1em;
+}
+
 .content {
 	gap: 1.5em;
+}
+
+.checkbox {
+	overflow: hidden;
+	position: absolute;
+	height: 1px;
+	widows: 1px;
+}
+
+.slider {
+	background-image: url(../images/deactivated-switch.svg);
+	cursor: pointer;
+	display: block;
+	width: 17.5px;
+	height: 10px;
+}
+
+input:checked + .slider {
+	background-image: url(../images/active-switch.svg);
 }

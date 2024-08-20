@@ -1,6 +1,14 @@
 const radioPanel = document.querySelector("#area_player")
 const radioPlayer = document.querySelector("#player2")
 
+function removeElements(elementsArr) {
+	if (elementsArr) {
+		elementsArr.forEach(element => {
+			element.remove();
+		})
+	}
+}
+
 function removeIframes() {
 	const iframes = document.querySelectorAll('iframe')
 	if (iframes) {
@@ -12,13 +20,14 @@ function removeIframes() {
 	}
 }
 
+function removeAdsPanels() {
+	const adPanels = document.querySelectorAll('#ads1, #ads2')
+	removeElements(adPanels)
+}
+
 function removeGoogleAdPanels() {
 	const googlePanels = document.querySelectorAll('.adsbygoogle, .google_ad, [id^="google_ads"], [class*="adsbygoogle"]')
-	if (googlePanels) {
-		googlePanels.forEach(ad => {
-			ad.remove();
-		});
-	}
+	removeElements(googlePanels)
 }
 
 function handlePanelToggle(radioPanelStatus) {
@@ -49,6 +58,7 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
 	if (request.action === "first-load-or-refresh") {
 		removeIframes()
 		removeGoogleAdPanels()
+		removeAdsPanels()
 		handleInitialValues()
 
 		sendResponse({ status: "Executado" })

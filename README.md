@@ -37,7 +37,7 @@ Habblet AdBlocker é uma extensão simples que melhora a experiência de jogar h
 - Assim que vc estiver na aba do jogo, ou seja, na url "habblet.city/hotelv2" realize um click no ícone da extensão para abrir o painel de opções.
 ![](.github/step-5.png)
 
-- Agora é só escolher entre as duas opções disponíveis (A escolha é permanece mesmo ao recarregar a página)   
+- Agora é só escolher entre as duas opções disponíveis (A escolha permanece mesmo ao recarregar a página)   
 ![](.github/step-6.png)
 
 Só aproveitar agr!

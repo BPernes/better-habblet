@@ -21,7 +21,7 @@ function removeIframes() {
 }
 
 function removeAdsPanels() {
-	const adPanels = document.querySelectorAll('#ads1, #ads2')
+	const adPanels = document.querySelectorAll('#\\35 4543fsdd, #sadjahj1231')
 	removeElements(adPanels)
 }
 
@@ -56,6 +56,7 @@ async function handleInitialValues() {
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
 	if (request.action === "first-load-or-refresh") {
+		console.log("chamou o manage panels")
 		removeIframes()
 		removeGoogleAdPanels()
 		removeAdsPanels()

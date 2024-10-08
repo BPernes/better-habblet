@@ -1,0 +1,14 @@
+{
+  "name": "habblet-ad-remover",
+  "version": "1.0.0",
+  "description": "Habblet AdBlocker é uma extensão simples que melhora a experiência de jogar habblet removendo os anúncios irritantes",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

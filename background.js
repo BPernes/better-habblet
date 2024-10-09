@@ -1,4 +1,4 @@
-const TARGET_URL = 'https://www.habblet.city/hotelv2'
+const TARGET_URL = 'https://www.habblet.city/hotel'
 const GREY_ICONS = {
 	path: {
 		16: "./images/icon-16-grey.png",

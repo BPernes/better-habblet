@@ -21,7 +21,7 @@ function removeIframes() {
 }
 
 function removeAdsPanels() {
-	const adPanels = document.querySelectorAll('#ads1, #ads2')
+	const adPanels = document.querySelectorAll('#\\35 4543fsdd, #sadjahj1231')
 	removeElements(adPanels)
 }
 

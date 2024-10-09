@@ -56,7 +56,6 @@ async function handleInitialValues() {
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
 	if (request.action === "first-load-or-refresh") {
-		console.log("chamou o manage panels")
 		removeIframes()
 		removeGoogleAdPanels()
 		removeAdsPanels()

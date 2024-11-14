@@ -1,41 +1,11 @@
-const radioPanel = document.querySelector("#area_player")
-const radioPlayer = document.querySelector("#player2")
-
-function removeElements(elementsArr) {
-	if (elementsArr) {
-		elementsArr.forEach(element => {
-			element.remove();
-		})
-	}
-}
-
-function removeIframes() {
-	const iframes = document.querySelectorAll('iframe')
-	if (iframes) {
-		iframes.forEach(iframe => {
-			if (iframe.src.includes('google.com') || iframe.src.includes('doubleclick.net')) {
-				iframe.remove();
-			}
-		});
-	}
-}
-
-function removeAdsPanels() {
-	const adPanels = document.querySelectorAll('#\\35 4543fsdd, #sadjahj1231')
-	removeElements(adPanels)
-}
-
-function removeGoogleAdPanels() {
-	const googlePanels = document.querySelectorAll('.adsbygoogle, .google_ad, [id^="google_ads"], [class*="adsbygoogle"]')
-	removeElements(googlePanels)
-}
-
 function handlePanelToggle(radioPanelStatus) {
+	const radioPanel = document.querySelector("#area_player")
 	const value = radioPanelStatus ? 'hidden' : ''
 	radioPanel.setAttribute('style', `content-visibility: ${value};`)
 }
 
 function handlePlayerToggle(radioPlayerStatus) {
+	const radioPlayer = document.querySelector("#player2")
 	if (radioPlayerStatus) {
 		radioPlayer.removeAttribute("autoplay")
 		radioPlayer.pause()
@@ -51,14 +21,15 @@ async function handleInitialValues() {
 	const { radioPanelStatus, radioPlayerStatus } = parsedStatus
 	handlePanelToggle(radioPanelStatus)
 	handlePlayerToggle(radioPlayerStatus)
-
 }
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
 	if (request.action === "first-load-or-refresh") {
-		removeIframes()
-		removeGoogleAdPanels()
-		removeAdsPanels()
+		const adPanels = document.querySelectorAll('[id="56dfgav234"], #hjk324nb2')
+		const googlePanels = document.querySelectorAll('.adsbygoogle, .google_ad, [id^="google_ads"], [class*="adsbygoogle"]')
+		const iframes = document.querySelectorAll('iframe')
+
+		removeDomElements([iframes, adPanels, googlePanels])
 		handleInitialValues()
 
 		sendResponse({ status: "Executado" })

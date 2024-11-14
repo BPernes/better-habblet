@@ -31,7 +31,10 @@
    "content_scripts": [
       {
          "matches": ["https://www.habblet.city/hotel"],
-         "js": ["content/managePanels.js"]
+         "js": [
+            "utils/removeDomElements.js",
+            "content/managePanels.js"
+         ]
       }
    ],
    "permissions":[

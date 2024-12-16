@@ -4,18 +4,18 @@
    "description":"Extensão que remove os painéis de anúncio e desabilita a rádio habblet",
    "version":"1.0",
    "icons":{
-      "16":"images/icon-16.png",
-      "32":"images/icon-32.png",
-      "48":"images/icon-48.png",
-      "128":"images/icon-128.png"
+      "16":"/resources/images/icon-16.png",
+      "32":"/resources/images/icon-32.png",
+      "48":"/resources/images/icon-48.png",
+      "128":"/resources/images/icon-128.png"
    },
    "action":{
-      "default_popup": "./popup/popup.html",
+      "default_popup": "/src/popup/popup.html",
       "default_icon":{
-         "16":"images/icon-16.png",
-         "32":"images/icon-32.png",
-         "48":"images/icon-48.png",
-         "128":"images/icon-128.png"
+         "16":"/resources/images/icon-16.png",
+         "32":"/resources/images/icon-32.png",
+         "48":"/resources/images/icon-48.png",
+         "128":"/resources/images/icon-128.png"
       }
    },
    "declarative_net_request": {
@@ -26,25 +26,25 @@
       }]
    },
    "background":{
-      "service_worker":"background.js"
+      "service_worker":"/src/background.js"
    },
    "content_scripts": [
       {
          "matches": ["https://www.habblet.city/hotel"],
-         "css": ["content/styles/handItemMenu.css"],
+         "css": ["/src/content/styles/handItemMenu.css"],
          "js": [
-            "utils/removeDomElements.js",
-            "utils/handitems.js",
-            "content/styles/shadowDomStyles.js",
-            "content/managePanels.js",
-            "content/handItemMenu.js"
+            "/src/utils/removeDomElements.js",
+            "/src/utils/handitems.js",
+            "/src/content/styles/shadowDomStyles.js",
+            "/src/content/managePanels.js",
+            "/src/content/handItemMenu.js"
          ],
          "all_frames": true
       }
    ],
    "web_accessible_resources": [
       {
-       "resources": [ "images/menu-icon.png", "images/handitems/*.png" ],
+       "resources": [ "/resources/images/menu-icon.png", "/resources/images/handitems/*.png" ],
        "matches": [ "https://www.habblet.city/*" ]
       }
    ],

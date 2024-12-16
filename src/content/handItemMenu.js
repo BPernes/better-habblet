@@ -35,7 +35,9 @@ function watchRootNode(mutations, observer) {
 }
 
 function getHanditemMenuIcon() {
-  const handitemImgSrc = chrome.runtime.getURL('/images/menu-icon.png')
+  const handitemImgSrc = chrome.runtime.getURL(
+    '/resources/images/menu-icon.png'
+  )
   const handitemMenuSelector = `div:has(> img[src="${handitemImgSrc}"])`
 
   const handitemMenuElement = document.querySelector(handitemMenuSelector)
@@ -76,7 +78,7 @@ function createHanditemIcon(parentNode) {
     const handitemImg = document.createElement('img')
 
     handitemContainer.classList.add(...MENU_ITEM_CLASSES)
-    handitemImg.src = chrome.runtime.getURL('/images/menu-icon.png')
+    handitemImg.src = chrome.runtime.getURL('/resources/images/menu-icon.png')
 
     handitemContainer.appendChild(handitemImg)
 

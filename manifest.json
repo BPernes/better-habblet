@@ -31,10 +31,21 @@
    "content_scripts": [
       {
          "matches": ["https://www.habblet.city/hotel"],
+         "css": ["content/styles/handItemMenu.css"],
          "js": [
             "utils/removeDomElements.js",
-            "content/managePanels.js"
-         ]
+            "utils/handitems.js",
+            "content/styles/shadowDomStyles.js",
+            "content/managePanels.js",
+            "content/handItemMenu.js"
+         ],
+         "all_frames": true
+      }
+   ],
+   "web_accessible_resources": [
+      {
+       "resources": [ "images/menu-icon.png", "images/handitems/*.png" ],
+       "matches": [ "https://www.habblet.city/*" ]
       }
    ],
    "permissions":[

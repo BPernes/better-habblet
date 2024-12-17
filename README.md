@@ -1,43 +1,75 @@
-# Habblet Ad-Blocker
+# Better Habblet
 
-Habblet AdBlocker é uma extensão simples que melhora a experiência de jogar habblet removendo os anúncios irritantes
+Better Habblet é uma extensão para navegadores baseados no Chromium projetada para aprimorar a experiência de jogar Habblet. Ela remove anúncios, oferece um controle mais fácil da rádio do jogo e adiciona menus utilitários dentro do ambiente virtual.
 
 ## Funcionalidades
 
-- Remove os banners de anúncio, assim como outros anúncios da google
-- Esconde e muta a rádio do jogo opcionalmente (A sua escolha é lembrada permanentemente)
+- **Bloqueio de anúncios**: Remove permanentemente os banners de anúncios indesejados do jogo.
+- **Controle da rádio**: Permite esconder ou silenciar a rádio do jogo de forma opcional, com sua escolha sendo mantida mesmo após fechar o navegador.
+- **Menu de handitems**: Adiciona um menu interativo para seleção de handitems ao entrar em quartos do jogo.
 
+## Instalação da Extensão
 
-## Instalando a extensão
+1. **Baixe o repositório zipado**:
+   - Acesse o botão de download do repositório e clique para salvar o arquivo.
+   
+   ![Botão de download](.github/step-1.png)
 
-- Realize o download do repositório zipado
+2. **Extraia os arquivos**:
+   - Salve o arquivo zipado em um diretório de sua preferência e extraia o conteúdo.
 
-![print do botao de download](.github/step-1.png)
+3. **Acesse o gerenciador de extensões do navegador**:
+   - Abra o navegador baseado em Chromium de sua preferência e navegue até a aba "Gerenciar Extensões".
 
-- Salve o arquivo zipado em qualquer diretório de sua escolha
-- Extraia a pasta de dentro do arquivo
-- Abra o seu navegador de preferência e vá em Gerenciar Extensões
-- Na aba de gerenciar extesões, ative o modo desenvolvedor clicando no botão
+4. **Habilite o modo desenvolvedor**:
+   - Ative o modo desenvolvedor clicando no botão correspondente.
+   
+   ![Botão do modo desenvolvedor](.github/step-2.png)
 
-![botão do modo desenvolvedor](.github/step-2.png)
+5. **Carregue a extensão**:
+   - Clique em "Load unpacked" e selecione a pasta extraída do arquivo zip.
+   
+   ![Três botões selecionáveis](.github/step-3.png)
 
-- Clique no botão "Load unpacked" e selecione a pasta que vc realizou o download anteriormente
+6. **Confirmação da instalação**:
+   - A extensão será carregada corretamente e aparecerá junto com outras extensões instaladas.
+   
+   ![Detalhes da extensão](.github/step-4.png)
 
-![três botões selecionáveis](.github/step-3.png)
+7. **Fixe a extensão para acesso rápido**:
+   - Pine a extensão na barra de ferramentas do navegador.
 
-- Após selecionar a pasta a extensão deverá carregar corretamente e irá aparecer junto de outras extensões, da seguinte forma
+## Como Usar
 
-![print dos detalhes da extensão](.github/step-4.png)
+1. **Bloqueio automático de anúncios**:
+   - Ao acessar o jogo, os anúncios serão bloqueados automaticamente.
 
-- Pronto, agora é só pinar a extensão na sua barra de extensões!
+2. **Acessando o painel de opções**:
+   - Certifique-se de estar na URL do jogo (`habblet.city/hotelv2`) e clique no ícone da extensão para abrir o painel de opções.
+   
+   ![Abrir painel de opções](.github/step-5.png)
 
-## Como utilizar?
+3. **Configurações personalizadas**:
+   - Escolha entre as opções disponíveis (as configurações permanecem após recarregar a página).
+   
+   ![Painel de opções](.github/step-6.png)
 
-- Automaticamente a extensão irá bloquear os anúncios
-- Assim que vc estiver na aba do jogo, ou seja, na url "habblet.city/hotelv2" realize um click no ícone da extensão para abrir o painel de opções.
-![](.github/step-5.png)
+4. **Menu de handitems**:
+   - Ao entrar em um quarto, um menu de handitems será adicionado à barra de ferramentas.
+   
+   ![Menu de handitems](.github/step-7.png)
 
-- Agora é só escolher entre as duas opções disponíveis (A escolha permanece mesmo ao recarregar a página)   
-![](.github/step-6.png)
+5. **Selecione um handitem**:
+   - Clique no ícone do menu para abrir a lista de handitems. Escolha um item, e ele será equipado automaticamente, sem necessidade de comandos como `:handitem x`.
+   
+   ![Seleção de handitems](.github/step-8.png)
 
-Só aproveitar agr!
+## Futuras Melhorias
+
+- **Menu utilitário de enables**: Inclusão de uma ferramenta para gerenciar enables do jogo.
+- **Compatibilidade ampliada**: Permitir o uso da extensão em navegadores não baseados no Chromium, como Firefox.
+- **Integração de ferramenta de build**: Implementar suporte a sistemas como Esbuild, Vite ou Webpack para facilitar o desenvolvimento e distribuição.
+
+---
+
+Aproveite sua experiência no Habblet com a Better Habblet!

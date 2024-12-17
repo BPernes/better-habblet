@@ -18,6 +18,7 @@ function watchRootNode(mutations, observer) {
       firstNode?.className === 'nitro-hotel-view'
 
     if (isPlayerOnRoom) {
+      removeHanditemCard()
       const menuContainer = document.querySelector(
         'div:has(> div.icon-inventory)'
       )

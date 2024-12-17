@@ -1,7 +1,7 @@
 {
    "manifest_version":3,
-   "name":"Habblet Sem Anúncios",
-   "description":"Extensão que remove os painéis de anúncio e desabilita a rádio habblet",
+   "name":"Better Habblet",
+   "description":"Extensão que melhora significativamente a experiência de jogar Habblet",
    "version":"1.0",
    "icons":{
       "16":"/resources/images/icon-16.png",

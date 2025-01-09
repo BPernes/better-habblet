@@ -1,3 +1,13 @@
+import sheet from './styles/shadowDomStyles'
+import { MENU_CARD_CLASSES } from './styles/shadowDomStyles'
+import { DRAGGABLE_WINDOW_CLASSES } from './styles/shadowDomStyles'
+import { DRAGGABLE_WINDOW_STYLES } from './styles/shadowDomStyles'
+import { NITRO_CARD_HEADER_CLASSES } from './styles/shadowDomStyles'
+import { TEXT_WRAPPER } from './styles/shadowDomStyles'
+import { HEADER_TEXT } from './styles/shadowDomStyles'
+import { CLOSE_ICON } from './styles/shadowDomStyles'
+import { GRID_CONTAINER } from './styles/shadowDomStyles'
+
 function watchDomNode() {
   const rootElement = document.querySelector('#root')
 

@@ -10,7 +10,7 @@
       "128":"/resources/images/icon-128.png"
    },
    "action":{
-      "default_popup": "/src/popup/popup.html",
+      "default_popup": "/popup/popup.html",
       "default_icon":{
          "16":"/resources/images/icon-16.png",
          "32":"/resources/images/icon-32.png",
@@ -26,18 +26,18 @@
       }]
    },
    "background":{
-      "service_worker":"/src/background.js"
+      "service_worker":"/background/background.js"
    },
    "content_scripts": [
       {
          "matches": ["https://www.habblet.city/hotel"],
-         "css": ["/src/content/styles/handItemMenu.css"],
+         "css": ["/content/styles/handItemMenu.css"],
          "js": [
-            "/src/utils/removeDomElements.js",
-            "/src/utils/handitems.js",
-            "/src/content/styles/shadowDomStyles.js",
-            "/src/content/managePanels.js",
-            "/src/content/handItemMenu.js"
+            "/utils/removeDomElements.js",
+            "/utils/handitems.js",
+            "/content/styles/shadowDomStyles.js",
+            "/content/managePanels.js",
+            "/content/handItemMenu.js"
          ],
          "all_frames": true
       }

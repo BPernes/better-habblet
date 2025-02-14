@@ -11,7 +11,7 @@
 @font-face {
 
 	font-family: 'Press Start 2P';
-	src: url("../../resources/fonts/PressStart2P.woff2") format('woff2-variations');
+	src: url("../resources/fonts/PressStart2P.woff2") format('woff2-variations');
 	font-weight: 100 900;
 }
 
@@ -60,7 +60,7 @@ label {
 
 .panel {
 	background-color: var(--clr-bg-panel);
-	background-image: url(../../resources/images/panel-innerlines.svg);
+	background-image: url("../resources/images/panel-innerlines.svg");
 	border: solid black 1px;
 	padding: 1em;
 	gap: 0.5em;
@@ -85,7 +85,7 @@ label {
 }
 
 .slider {
-	background-image: url(../../resources/images/deactivated-switch.svg);
+	background-image: url("../resources/images/deactivated-switch.svg");
 	cursor: pointer;
 	display: block;
 	width: 17.5px;
@@ -93,5 +93,5 @@ label {
 }
 
 input:checked+.slider {
-	background-image: url(../../resources/images/active-switch.svg);
+	background-image: url("../resources/images/active-switch.svg");
 }

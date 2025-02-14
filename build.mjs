@@ -34,7 +34,7 @@ if (devMode === '-d') {
 
   copyNeededFiles()
 } else {
-  let result = await esbuild.build({
+  await esbuild.build({
     entryPoints,
     outdir,
     minify: true,
@@ -43,8 +43,6 @@ if (devMode === '-d') {
       '.png': 'dataurl',
     },
   })
-
-  fs.writeFileSync('meta.json', JSON.stringify(result.metafile))
 
   copyNeededFiles()
 }

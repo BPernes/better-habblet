@@ -34,11 +34,17 @@ if (devMode === '-d') {
 
   copyNeededFiles()
 } else {
-  await esbuild.build({
+  let result = await esbuild.build({
     entryPoints,
     outdir,
     minify: true,
+    loader: {
+      '.svg': 'dataurl',
+      '.png': 'dataurl',
+    },
   })
+
+  fs.writeFileSync('meta.json', JSON.stringify(result.metafile))
 
   copyNeededFiles()
 }

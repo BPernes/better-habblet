@@ -26,7 +26,7 @@ async function changeExtensionStatus(newStatus, tabId) {
   if (newStatus === 'on') {
     chrome.action.enable()
     await chrome.action.setIcon({ tabId, ...DEFAULT_ICONS })
-    await chrome.action.setPopup({ popup: '../src/popup/popup.html' })
+    await chrome.action.setPopup({ popup: '../popup/popup.html' })
   } else {
     chrome.action.disable()
     await chrome.action.setIcon({ tabId, ...GREY_ICONS })

@@ -1,5 +1,7 @@
 import { retrieveSyncStorageValue } from '../utils/storage.js'
 
+console.log('LOADEDDD!!')
+
 const radioPanelCheckbox = document.querySelector("input[name='hide-player']")
 const stopRadioElement = document.querySelector("input[name='stop-radio']")
 

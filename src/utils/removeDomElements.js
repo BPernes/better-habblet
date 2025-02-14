@@ -9,5 +9,3 @@ function removeDomElements(elements) {
     })
   }
 }
-
-export default removeDomElements

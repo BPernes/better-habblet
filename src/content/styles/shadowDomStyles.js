@@ -164,8 +164,8 @@ const styles = `
 	}
 `
 
-export const MENU_ITEM_CLASSES = ['cursor-pointer', 'navigation-item', 'icon']
-export const MENU_CARD_CLASSES = [
+const MENU_ITEM_CLASSES = ['cursor-pointer', 'navigation-item', 'icon']
+const MENU_CARD_CLASSES = [
   'd-flex',
   'overflow-hidden',
   'position-relative',
@@ -173,13 +173,10 @@ export const MENU_CARD_CLASSES = [
   'card',
   'handitem-menu',
 ]
-export const DRAGGABLE_WINDOW_CLASSES = [
-  'position-absolute',
-  'draggable-window',
-]
-export const DRAGGABLE_WINDOW_STYLES =
+const DRAGGABLE_WINDOW_CLASSES = ['position-absolute', 'draggable-window']
+const DRAGGABLE_WINDOW_STYLES =
   'z-index: 401; top: calc(-170px + 38vh); left: 110px; transform: translate(393px, 130px); visibility: visible;'
-export const NITRO_CARD_HEADER_CLASSES = [
+const NITRO_CARD_HEADER_CLASSES = [
   'd-flex',
   'position-relative',
   'flex-column',
@@ -189,18 +186,16 @@ export const NITRO_CARD_HEADER_CLASSES = [
   'container-fluid',
   'card-header',
 ]
-export const TEXT_WRAPPER = [
+const TEXT_WRAPPER = [
   'd-flex',
   'w-100',
   'align-items-center',
   'justify-content-center',
 ]
-export const HEADER_TEXT = ['card-header-text']
-export const CLOSE_ICON = ['position-absolute', 'end-0', 'close-icon']
-export const GRID_CONTAINER = ['grid-container']
-export const IMG_WRAPPER = ['img-wrapper', 'd-flex', 'justify-content-center']
+const HEADER_TEXT = ['card-header-text']
+const CLOSE_ICON = ['position-absolute', 'end-0', 'close-icon']
+const GRID_CONTAINER = ['grid-container']
+const IMG_WRAPPER = ['img-wrapper', 'd-flex', 'justify-content-center']
 
 const sheet = new CSSStyleSheet()
 sheet.replaceSync(styles)
-
-export default sheet

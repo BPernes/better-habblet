@@ -1,5 +1,3 @@
-import removeDomElements from '../utils/removeDomElements'
-
 function handlePanelToggle(radioPanelStatus) {
   const radioPanel = document.querySelector('#area_player')
   const value = radioPanelStatus ? 'hidden' : ''

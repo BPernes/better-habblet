@@ -68,7 +68,7 @@ Better Habblet é uma extensão para navegadores baseados no Chromium projetada 
 
 - **Menu utilitário de enables**: Inclusão de uma ferramenta para gerenciar enables do jogo.
 - **Compatibilidade ampliada**: Permitir o uso da extensão em navegadores não baseados no Chromium, como Firefox.
-- **Integração de ferramenta de build**: Implementar suporte a sistemas como Esbuild, Vite ou Webpack para facilitar o desenvolvimento e distribuição.
+- ~~**Integração de ferramenta de build**: Implementar suporte a sistemas como Esbuild, Vite ou Webpack para facilitar o desenvolvimento e distribuição.~~
 
 ---
 

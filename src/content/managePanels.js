@@ -30,7 +30,7 @@ async function handleInitialValues() {
 
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
   if (request.action === 'first-load-or-refresh') {
-    const adPanels = document.querySelectorAll('[id="56dfgav234"], #hjk324nb2')
+    const adPanels = document.querySelectorAll('[id="675hfgh3453"], [id="6fs7567545g"]')
     const googlePanels = document.querySelectorAll(
       '.adsbygoogle, .google_ad, [id^="google_ads"], [class*="adsbygoogle"]'
     )

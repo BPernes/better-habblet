@@ -2,13 +2,15 @@
 
 Better Habblet é uma extensão para navegadores baseados no Chromium projetada para aprimorar a experiência de jogar Habblet. Ela remove anúncios, oferece um controle mais fácil da rádio do jogo e adiciona menus utilitários dentro do ambiente virtual.
 
+Disponível para **download** na [Chrome Web Store](https://chromewebstore.google.com/detail/ahcaafmfhjcclbodmiibeeldpmepfeki?utm_source=item-share-cb)
+
 ## Funcionalidades
 
 - **Bloqueio de anúncios**: Remove permanentemente os banners de anúncios indesejados do jogo.
 - **Controle da rádio**: Permite esconder ou silenciar a rádio do jogo de forma opcional, com sua escolha sendo mantida mesmo após fechar o navegador.
 - **Menu de handitems**: Adiciona um menu interativo para seleção de handitems ao entrar em quartos do jogo.
 
-## Instalação da Extensão
+## Instalação manual da Extensão
 
 1. **Baixe o repositório zipado**:
    - Acesse o botão de download do repositório e clique para salvar o arquivo.

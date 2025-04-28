@@ -164,38 +164,24 @@ const styles = `
 	}
 `
 
-const MENU_ITEM_CLASSES = ['cursor-pointer', 'navigation-item', 'icon']
-const MENU_CARD_CLASSES = [
-  'd-flex',
-  'overflow-hidden',
-  'position-relative',
-  'flex-column',
-  'card',
-  'handitem-menu',
-]
-const DRAGGABLE_WINDOW_CLASSES = ['position-absolute', 'draggable-window']
-const DRAGGABLE_WINDOW_STYLES =
-  'z-index: 401; top: calc(-170px + 38vh); left: 110px; transform: translate(393px, 130px); visibility: visible;'
-const NITRO_CARD_HEADER_CLASSES = [
-  'd-flex',
-  'position-relative',
-  'flex-column',
-  'gap-2',
-  'align-items-center',
-  'justify-content-center',
-  'container-fluid',
-  'card-header',
-]
-const TEXT_WRAPPER = [
-  'd-flex',
-  'w-100',
-  'align-items-center',
-  'justify-content-center',
-]
-const HEADER_TEXT = ['card-header-text']
-const CLOSE_ICON = ['position-absolute', 'end-0', 'close-icon']
-const GRID_CONTAINER = ['grid-container']
-const IMG_WRAPPER = ['img-wrapper', 'd-flex', 'justify-content-center']
+function createShadowDOM() {
+	const habbletDragWindow = document.querySelector(
+		'#draggable-windows-container'
+	)
+	const draggableWindowsContainer = habbletDragWindow.parentNode
 
-const sheet = new CSSStyleSheet()
-sheet.replaceSync(styles)
+	const shadowHost = document.createElement('div')
+	shadowHost.setAttribute('id', 'draggable-windows-sr')
+
+	draggableWindowsContainer.appendChild(shadowHost)
+	const shadowDOMRoot = shadowHost.attachShadow({ mode: 'open' })
+
+	const sheet = new CSSStyleSheet()
+	sheet.replaceSync(styles)
+
+	shadowDOMRoot.adoptedStyleSheets = [sheet]
+
+	return shadowDOMRoot
+}
+
+export const shadowDOMRoot = createShadowDOM()

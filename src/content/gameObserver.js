@@ -1,4 +1,4 @@
-import { createHanditemIcon, removeHanditemCard, getHanditemMenuIcon } from "./handItemMenu"
+import { createHanditemIcon, removeHanditemCard, getHanditemMenuIcon } from "./handitens"
 
 function watchRootNode(mutations,) {
 	mutations.forEach((mutation) => {
